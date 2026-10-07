@@ -16,11 +16,15 @@
     <Filter Include="Header Files\Engine">
       <UniqueIdentifier>{06720419-170a-413c-b8e1-f675373888c8}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source\Engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Header Files\Rendering">
+      <UniqueIdentifier>{c12c1b68-9b7b-437e-bace-58ca02806abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rendering">
+      <UniqueIdentifier>{1778df7e-0348-4684-a74a-f74345ae2f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{20ac9560-af1a-4a94-bff0-6dee3e627437}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Engine\Engine.h">
@@ -28,6 +32,12 @@
     </ClInclude>
     <ClInclude Include="include\Engine\API.h">
       <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engine\Prerequisites.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rendering\Device.h">
+      <Filter>Header Files\Rendering</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -37,5 +47,13 @@
     <None Include="..\Shaders\Cube.hlsl">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Engine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Rendering\Device.cpp">
+      <Filter>Source Files\Rendering</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
